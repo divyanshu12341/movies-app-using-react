@@ -1,11 +1,12 @@
-import PrimarySearchAppBar from "./Components/Navbar/Navbar"
-
-PrimarySearchAppBar
-
+import { Routes,Route } from "react-router-dom"
+import Navbar from "./Components/Navbar/Navbar"
+import Home from "./Pages/Home"
 function App() {
   return (
     <>
-    <PrimarySearchAppBar />
+    <Routes>
+      <Route path = '/' element = {<Home />} />
+    </Routes>
     </>
   )
 }

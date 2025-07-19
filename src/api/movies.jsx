@@ -6,7 +6,6 @@ export const getMovies = ()=>async dispatch=>{
 ;
 try{
     const {data} = await axios.get(url);
-    console.log(data);
     dispatch(setMovies(data));
     return data;
 }catch(err){
